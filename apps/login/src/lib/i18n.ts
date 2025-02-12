@@ -5,24 +5,8 @@ export interface Lang {
 
 export const LANGS: Lang[] = [
   {
-    name: "English",
-    code: "en",
-  },
-  {
-    name: "Deutsch",
-    code: "de",
-  },
-  {
-    name: "Italiano",
-    code: "it",
-  },
-  {
     name: "Español",
     code: "es",
-  },
-  {
-    name: "简体中文",
-    code: "zh",
   },
 ];
 
