@@ -8,13 +8,12 @@ export function Theme() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
 
-  setTheme("light"); // Force light theme by default
-  
   const isDark = resolvedTheme === "dark";
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
+    setTheme("light"); // Force light theme by default
   }, []);
 
   if (!mounted) {
