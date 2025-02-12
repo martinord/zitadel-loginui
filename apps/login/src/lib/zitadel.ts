@@ -886,7 +886,7 @@ export async function searchUsers({
     return loginNameResult;
   }
 
-  return { error: "User not found in the system" };
+  return { error: "Usuario no registrado en el sistema" };
 }
 
 export async function getDefaultOrg({
