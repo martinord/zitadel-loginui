@@ -11,9 +11,12 @@
   "loginname": {
     "title": "Welcome back!",
     "description": "Enter your login data.",
-    "register": "Register new user"
+    "register": "Register new user",
+    "submit": "Continue",
+    "loginname": "Username"
   },
   "password": {
+    "password": "Password",
     "verify": {
       "title": "Password",
       "description": "Enter your password.",
@@ -145,8 +148,13 @@
     "password": {
       "title": "Set Password",
       "description": "Set the password for your account",
-      "submit": "Continue"
-    }
+      "submit": "Continue",
+      "password": "Password",
+      "confirmPassword": "Confirm password"
+    },
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "E-mail"
   },
   "invite": {
     "title": "Invite User",
