@@ -131,7 +131,7 @@ export function RegisterForm({
             autoComplete="firstname"
             required
             {...register("firstname", { required: "This field is required" })}
-            label="First name"
+            label={t("firstname")}
             error={errors.firstname?.message as string}
             data-testid="firstname-text-input"
           />
@@ -142,7 +142,7 @@ export function RegisterForm({
             autoComplete="lastname"
             required
             {...register("lastname", { required: "This field is required" })}
-            label="Last name"
+            label={t("lastname")}
             error={errors.lastname?.message as string}
             data-testid="lastname-text-input"
           />
@@ -153,7 +153,7 @@ export function RegisterForm({
             autoComplete="email"
             required
             {...register("email", { required: "This field is required" })}
-            label="E-mail"
+            label={t("email")}
             error={errors.email?.message as string}
             data-testid="email-text-input"
           />

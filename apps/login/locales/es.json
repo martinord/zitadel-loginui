@@ -96,16 +96,16 @@
   },
   "passkey": {
     "verify": {
-      "title": "Autenticar con una clave de acceso",
+      "title": "Autenticar con una llave de acceso",
       "description": "Tu dispositivo pedirá tu huella digital, rostro o bloqueo de pantalla",
       "usePassword": "Usar contraseña",
       "submit": "Continuar"
     },
     "set": {
-      "title": "Configurar una clave de acceso",
+      "title": "Configurar una llave de acceso",
       "description": "Tu dispositivo pedirá tu huella digital, rostro o bloqueo de pantalla",
       "info": {
-        "description": "Una clave de acceso es un método de autenticación en un dispositivo como tu huella digital, Apple FaceID o similar.",
+        "description": "Una llave de acceso es un método de autenticación en un dispositivo como tu huella digital, Apple FaceID o similar.",
         "link": "Autenticación sin contraseña"
       },
       "skip": "Omitir",
@@ -125,7 +125,7 @@
   },
   "register": {
     "methods": {
-      "passkey": "Clave de acceso",
+      "passkey": "Llave de acceso",
       "password": "Contraseña"
     },
     "disabled": {
@@ -147,7 +147,10 @@
       "title": "Establecer Contraseña",
       "description": "Establece la contraseña para tu cuenta",
       "submit": "Continuar"
-    }
+    },
+    "firstname": "Nombre",
+    "lastname": "Apellidos",
+    "email": "Correo electrónico"
   },
   "invite": {
     "title": "Invitar usuario",
