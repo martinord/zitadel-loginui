@@ -68,7 +68,7 @@ export function PasswordComplexity({
         <div className="flex flex-row items-center" data-testid="length-check">
           {hasMinLength ? check : cross}
           <span className={desc}>
-            Password length {passwordComplexitySettings.minLength.toString()}
+            Longitud de contraseña {passwordComplexitySettings.minLength.toString()} caracteres
           </span>
         </div>
       ) : (
@@ -76,23 +76,23 @@ export function PasswordComplexity({
       )}
       <div className="flex flex-row items-center" data-testid="symbol-check">
         {hasSymbol ? check : cross}
-        <span className={desc}>has Symbol</span>
+        <span className={desc}>Tiene un símbolo</span>
       </div>
       <div className="flex flex-row items-center" data-testid="number-check">
         {hasNumber ? check : cross}
-        <span className={desc}>has Number</span>
+        <span className={desc}>Tiene un número</span>
       </div>
       <div className="flex flex-row items-center" data-testid="uppercase-check">
         {hasUppercase ? check : cross}
-        <span className={desc}>has uppercase</span>
+        <span className={desc}>Tiene una mayúscula</span>
       </div>
       <div className="flex flex-row items-center" data-testid="lowercase-check">
         {hasLowercase ? check : cross}
-        <span className={desc}>has lowercase</span>
+        <span className={desc}>Tiene una minúscula</span>
       </div>
       <div className="flex flex-row items-center" data-testid="equal-check">
         {equals ? check : cross}
-        <span className={desc}>equals</span>
+        <span className={desc}>Coinciden</span>
       </div>
     </div>
   );

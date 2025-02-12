@@ -119,7 +119,7 @@ export function SetRegisterPasswordForm({
             {...register("password", {
               required: "You have to provide a password!",
             })}
-            label="Password"
+            label={t("password.password")}
             error={errors.password?.message as string}
             data-testid="password-text-input"
           />
@@ -132,7 +132,7 @@ export function SetRegisterPasswordForm({
             {...register("confirmPassword", {
               required: "This field is required",
             })}
-            label="Confirm Password"
+            label={t("password.confirmPassword")}
             error={errors.confirmPassword?.message as string}
             data-testid="password-confirm-text-input"
           />

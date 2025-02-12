@@ -146,7 +146,9 @@
     "password": {
       "title": "Establecer Contraseña",
       "description": "Establece la contraseña para tu cuenta",
-      "submit": "Continuar"
+      "submit": "Continuar",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña"
     },
     "firstname": "Nombre",
     "lastname": "Apellidos",
