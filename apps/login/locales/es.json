@@ -16,6 +16,7 @@
     "loginname": "Nombre de usuario"
   },
   "password": {
+    "password": "Contraseña",
     "verify": {
       "title": "Contraseña",
       "description": "Introduce tu contraseña.",

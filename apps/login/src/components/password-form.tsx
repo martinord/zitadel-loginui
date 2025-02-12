@@ -125,7 +125,7 @@ export function PasswordForm({
           type="password"
           autoComplete="password"
           {...register("password", { required: "This field is required" })}
-          label="Password"
+          label={t("password")}
           data-testid="password-text-input"
         />
         {!loginSettings?.hidePasswordReset && (
