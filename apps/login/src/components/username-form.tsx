@@ -152,7 +152,7 @@ export function UsernameForm({
           onClick={handleSubmit((e) => submitLoginName(e, organization))}
         >
           {loading && <Spinner className="h-5 w-5 mr-2" />}
-          continue
+          {t("submit")}
         </Button>
       </div>
     </form>
