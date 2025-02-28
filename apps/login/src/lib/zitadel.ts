@@ -46,6 +46,8 @@ import { createServiceForHost } from "./service";
 
 const useCache = process.env.DEBUG !== "true";
 
+const EXPIRATION_TIME_MINUTES = 60; // Hardcoded session lifetime of 1 minute
+
 async function cacheWrapper<T>(callback: Promise<T>) {
   "use cache";
   cacheLife("hours");
@@ -272,7 +274,7 @@ export async function createSessionFromChecks({
   const sessionService: Client<typeof SessionService> =
     await createServiceForHost(SessionService, serviceUrl, serviceRegion);
 
-  return sessionService.createSession({ checks, challenges, lifetime }, {});
+  return sessionService.createSession({ checks, challenges, lifetime: { seconds: BigInt(EXPIRATION_TIME_MINUTES), nanos: 0 } }, {}); // hardcoded expiration
 }
 
 export async function createSessionForUserIdAndIdpIntent({
@@ -304,7 +306,7 @@ export async function createSessionForUserIdAndIdpIntent({
       },
       idpIntent,
     },
-    lifetime,
+    lifetime: { seconds: BigInt(EXPIRATION_TIME_MINUTES), nanos: 0 }, // hardcoded expiration
   });
 }
 
@@ -335,7 +337,7 @@ export async function setSession({
       challenges,
       checks: checks ? checks : {},
       metadata: {},
-      lifetime,
+      lifetime: { seconds: BigInt(EXPIRATION_TIME_MINUTES), nanos: 0 }, // hardcoded expiration
     },
     {},
   );
