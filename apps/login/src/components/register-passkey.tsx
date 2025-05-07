@@ -167,7 +167,7 @@ export function RegisterPasskey({
 
     params.set("sessionId", sessionId);
 
-    router.push("/passkey?" + params);
+    router.push("/signedin?" + params);
   }
 
   return (
