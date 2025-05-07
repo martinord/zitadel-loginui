@@ -130,7 +130,7 @@ export function LoginPasskey({
         return;
       })
       .finally(() => {
-        setLoading(false);
+        // setLoading(false);
       });
 
     if (response && "error" in response && response.error) {
@@ -193,7 +193,7 @@ export function LoginPasskey({
         return submitLogin(data);
       })
       .finally(() => {
-        setLoading(false);
+        // setLoading(false);
       });
   }
 
