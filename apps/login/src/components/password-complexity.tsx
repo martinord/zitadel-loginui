@@ -74,7 +74,7 @@ export function PasswordComplexity({
       ) : (
         <span />
       )}
-      <div className="flex flex-row items-center" data-testid="symbol-check">
+      {/* <div className="flex flex-row items-center" data-testid="symbol-check">
         {hasSymbol ? check : cross}
         <span className={desc}>Tiene un símbolo</span>
       </div>
@@ -89,7 +89,7 @@ export function PasswordComplexity({
       <div className="flex flex-row items-center" data-testid="lowercase-check">
         {hasLowercase ? check : cross}
         <span className={desc}>Tiene una minúscula</span>
-      </div>
+      </div> */}
       <div className="flex flex-row items-center" data-testid="equal-check">
         {equals ? check : cross}
         <span className={desc}>Coinciden</span>
