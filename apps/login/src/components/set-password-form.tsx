@@ -218,7 +218,7 @@ export function SetPasswordForm({
               type="text"
               required
               {...register("code", {
-                required: "This field is required",
+                required: "Este campo es obligatorio",
               })}
               label="Code"
               autoComplete="one-time-code"
@@ -233,7 +233,7 @@ export function SetPasswordForm({
             autoComplete="new-password"
             required
             {...register("password", {
-              required: "You have to provide a password!",
+              required: "Debe proporcionar una contraseña",
             })}
             label="New Password"
             error={errors.password?.message as string}
@@ -246,7 +246,7 @@ export function SetPasswordForm({
             required
             autoComplete="new-password"
             {...register("confirmPassword", {
-              required: "This field is required",
+              required: "Este campo es obligatorio",
             })}
             label="Confirm Password"
             error={errors.confirmPassword?.message as string}

@@ -104,7 +104,7 @@ export function UsernameForm({
         <TextInput
           type="text"
           autoComplete="username"
-          {...register("loginName", { required: "This field is required" })}
+          {...register("loginName", { required: "Este campo es obligatorio" })}
           label={inputLabel}
           data-testid="username-text-input"
           suffix={suffix}

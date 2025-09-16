@@ -117,7 +117,7 @@ export function SetRegisterPasswordForm({
             autoComplete="new-password"
             required
             {...register("password", {
-              required: "You have to provide a password!",
+              required: "Debe proporcionar una contraseña",
             })}
             label={t("password.password")}
             error={errors.password?.message as string}
@@ -130,7 +130,7 @@ export function SetRegisterPasswordForm({
             required
             autoComplete="new-password"
             {...register("confirmPassword", {
-              required: "This field is required",
+              required: "Este campo es obligatorio",
             })}
             label={t("password.confirmPassword")}
             error={errors.confirmPassword?.message as string}

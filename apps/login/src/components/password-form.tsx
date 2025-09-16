@@ -124,7 +124,7 @@ export function PasswordForm({
         <TextInput
           type="password"
           autoComplete="password"
-          {...register("password", { required: "This field is required" })}
+          {...register("password", { required: "Este campo es obligatorio" })}
           label={t("password")}
           data-testid="password-text-input"
         />
